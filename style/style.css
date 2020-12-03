@@ -1,0 +1,192 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #43a7a6;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 15px 0 15px 0;
+}
+
+li {
+  padding: 3px 0 3px 0;
+}
+
+#price-grid {
+  margin: auto auto auto auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* width: 70%;
+    height: 50%; */
+  border-radius: 10px;
+  overflow: hidden; /* had to add this in to get the border-radius on this parent div to work */
+  box-shadow: -3px -3px 3px 3px rgba(131, 131, 131, 0.1),
+    3px -3px 3px 3px rgb(131, 131, 131, 0.1),
+    3px 3px 3px 3px rgb(131, 131, 131, 0.1),
+    -3px 3px 3px 3px rgb(131, 131, 131, 0.1);
+}
+
+.row {
+  display: table;
+  width: 100%;
+}
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.col {
+  display: table-cell;
+  width: 100%;
+}
+
+.col-50 {
+  display: table-cell;
+  width: 50%;
+}
+
+/* @media (max-width: 375px) {
+    .col-50 {
+        display: table-cell;
+        width: 100%;
+    }
+} */
+
+@media only screen and (max-width: 825px) {
+  /* For mobile phones: */
+  .col-50 {
+    display: block;
+    width: 100%;
+  }
+
+  #price-grid {
+    margin: auto auto auto auto;
+    position: absolute;
+    min-width: 75%;
+    top: 20px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    /* width: 70%;
+      height: 50%; */
+    border-radius: 10px;
+    overflow: hidden; /* had to add this in to get the border-radius on this parent div to work */
+    box-shadow: -3px -3px 3px 3px rgba(131, 131, 131, 0.1),
+      3px -3px 3px 3px rgb(131, 131, 131, 0.1),
+      3px 3px 3px 3px rgb(131, 131, 131, 0.1),
+      -3px 3px 3px 3px rgb(131, 131, 131, 0.1);
+  }
+}
+
+.main-section {
+  background-color: white;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  padding: 40px;
+  /* box-shadow: -5px -5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px -5px 5px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.catch-phrase {
+  color: #c4d573;
+  margin-bottom: 20px;
+}
+
+.grey-text {
+  color: #babdc5;
+}
+
+.price-details-section {
+  background-color: #2ab3b1;
+  /* border-bottom-left-radius: 10px; */
+  color: white;
+  padding: 40px;
+  /* box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.price-large {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.light-grey-text {
+  color: #88d0d1;
+  vertical-align: middle;
+}
+
+.features-section {
+  background-color: #4abebd;
+  /* border-bottom-right-radius: 10px; */
+  color: white;
+  padding: 40px;
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.features-section li {
+  list-style: none;
+}
+
+.button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  margin: 30px 0 20px 0;
+  text-align: center;
+}
